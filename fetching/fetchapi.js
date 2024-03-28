@@ -75,3 +75,23 @@ async function getddata(){
         console.error(error);
     }
 }
+
+
+
+function getddata(){
+    const promiseObj = fetch('dastajson.json');
+
+    promiseObj
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Erroreee: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log(data.name);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
