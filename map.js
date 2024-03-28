@@ -26,6 +26,15 @@ map.set('IN', "India")
 // console.log(map);
 
 for (const [key, value] of map) {
-    console.log(key, ':-', value);
+    // console.log(key, ':-', value);
 }
 
+
+
+const   myarry=[1,32,4,6,7,8,6,3,42];
+ 
+   const newnum= myarry.map((item)=>{
+
+    return item *2;
+})
+console.log(newnum)
